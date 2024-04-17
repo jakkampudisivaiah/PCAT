@@ -1,0 +1,19 @@
+public class fibonacci{
+    public static void main(String[] args) {
+        fibonacci(0);
+    }
+    if(n>=1){
+        System.out.print(0 + "");
+        if(n>=2){
+            System.out.print(1 + "");
+        }
+        int first = 0, second = 1;
+        for (int i =3; i<=n; i++){
+            int nextnumber = first + second;
+             System.out.print(nextnumber + " ");
+             first = second;
+             second = nextnumber;
+            
+        }
+    }
+}

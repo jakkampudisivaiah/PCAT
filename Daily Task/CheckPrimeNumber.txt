@@ -1,0 +1,27 @@
+package com;
+
+import java.util.Scanner;
+
+public class CheckPrimeNumber {
+	//Write a Java program that reads an integer and prints whether 
+	//it is a prime number using a for loop and if statements.
+	public static void main(String[] args) {
+		  Scanner scanner = new Scanner(System.in);
+	        System.out.print("Enter an integer: ");
+	        int number = scanner.nextInt();
+	        scanner.close();
+	        boolean isPrime = number > 1;
+	        for (int i = 2; i <= Math.sqrt(number); i++) {
+	            if (number % i == 0) {
+	                isPrime = false;
+	                break;
+	            }
+	        }
+	        System.out.println(number + (isPrime ? " is a prime number." : " is not a prime number."));
+	    }
+	
+		
+
+	}
+
+
